@@ -1,0 +1,12 @@
+c:\users\admin\documents\visual studio 2015\Projects\AppCepru\AppCepru\bin\Debug\AppCepru.exe.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\AppCepru\bin\Debug\AppCepru.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\AppCepru\bin\Debug\AppCepru.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\AppCepru\obj\Debug\AppCepru.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\AppCepru\obj\Debug\AppCepru.frmPrincipal.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\AppCepru\obj\Debug\AppCepru.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\AppCepru\obj\Debug\AppCepru.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\AppCepru\obj\Debug\AppCepru.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\AppCepru\obj\Debug\AppCepru.pdb
+D:\U\lavo V\Labo V 2.0\AppCepru\AppCepru\bin\Debug\AppCepru.exe.config
+D:\U\lavo V\Labo V 2.0\AppCepru\AppCepru\obj\Debug\AppCepru.exe
+D:\U\lavo V\Labo V 2.0\AppCepru\AppCepru\obj\Debug\AppCepru.pdb

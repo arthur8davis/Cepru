@@ -1,0 +1,3 @@
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\LibFormularios\obj\Debug\LibFormularios.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\LibFormularios\obj\Debug\LibFormularios.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache

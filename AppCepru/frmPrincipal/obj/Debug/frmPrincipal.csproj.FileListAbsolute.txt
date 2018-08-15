@@ -1,0 +1,26 @@
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\bin\Debug\frmPrincipal.exe.config
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\bin\Debug\frmPrincipal.exe
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\bin\Debug\frmPrincipal.pdb
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.csprojResolveAssemblyReference.cache
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.Properties.Resources.resources
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.csproj.GenerateResource.Cache
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.exe
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.pdb
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\bin\Debug\LibFormularios.dll
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\bin\Debug\LibClases.dll
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\bin\Debug\LibFormularios.pdb
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\bin\Debug\LibClases.pdb
+C:\Users\atjm_\Documents\Visual Studio 2015\Projects\lab5\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.Form1.resources
+G:\AppCepru\frmPrincipal\bin\Debug\frmPrincipal.exe.config
+G:\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.exe
+G:\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.pdb
+G:\AppCepru\frmPrincipal\bin\Debug\frmPrincipal.exe
+G:\AppCepru\frmPrincipal\bin\Debug\frmPrincipal.pdb
+G:\AppCepru\frmPrincipal\bin\Debug\LibFormularios.dll
+G:\AppCepru\frmPrincipal\bin\Debug\LibClases.dll
+G:\AppCepru\frmPrincipal\bin\Debug\LibFormularios.pdb
+G:\AppCepru\frmPrincipal\bin\Debug\LibClases.pdb
+G:\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.csprojResolveAssemblyReference.cache
+G:\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.Form1.resources
+G:\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.Properties.Resources.resources
+G:\AppCepru\frmPrincipal\obj\Debug\frmPrincipal.csproj.GenerateResource.Cache

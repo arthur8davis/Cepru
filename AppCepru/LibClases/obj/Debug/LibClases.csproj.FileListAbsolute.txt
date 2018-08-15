@@ -1,0 +1,3 @@
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\LibClases\obj\Debug\LibClases.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\LibClases\obj\Debug\LibClases.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\LibClases\obj\Debug\LibClases.csproj.GenerateResource.Cache

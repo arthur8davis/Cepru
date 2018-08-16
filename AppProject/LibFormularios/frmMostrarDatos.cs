@@ -140,7 +140,7 @@ namespace LibFormularios
         {
             string arreglo = linea.Substring(0, 6);
             string arreglo2 = linea.Substring(6, 8);
-            dgvDatos.Rows.Insert(posicion, arreglo, arreglo2);
+            dgvDatos.Rows.Insert(posicion, arreglo, arreglo2.Trim());
             
         }
         public void agregarFilaRespuesta(string linea, int posicion)
@@ -209,7 +209,7 @@ namespace LibFormularios
         {
             for (int i = 0; i < dgvDatos.Rows.Count; i++)
             {
-                if (dgvDatos[1, i].Value.ToString().Length == 8)
+                if (dgvDatos[1, i].Value.ToString().Length != 8)
                 { //Si el codigo del alumno no es 8
                     dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
                 }

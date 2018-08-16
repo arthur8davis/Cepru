@@ -52,8 +52,12 @@ namespace LibFormularios
                     aDataAdapter.Fill(aDataTable);
                     aConexion.Close();
                     dgvDatos.DataSource = null;
-                    dgvDatos.DataSource = aDataTable;                  
-                    
+                    dgvDatos.DataSource = aDataTable;
+                    dgvCorecciones.ColumnCount = dgvDatos.ColumnCount;
+                    for (int i = 0; i < dgvDatos.ColumnCount; i++)
+                    {
+                        dgvCorecciones.Columns[i].Name = dgvDatos.Columns[i].Name.ToString();
+                    }
                 }
 
                 //string cadenaConexionArchivoExcel = "provider=Microsoft.Jet.OLEDB.4.0;Data Source='" + ruta + "';Extended Properties=\"Excel 8.0 xml; HDR = Yes\"";
@@ -230,11 +234,13 @@ namespace LibFormularios
                 if (dgvDatos[0, i].Value.ToString().Length != 8)
                 { //Si el codigo del alumno no es 8
                     dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    //dgvCorecciones.Rows.Insert(i, dgvDatos.Rows[i]);
                 }
                 //Si los nombres de los alumnos una expresion de mas como ,;. y + o si el nombre esta vacio
                 else if (Regex.IsMatch(dgvDatos[1, i].Value.ToString(), exp) || dgvDatos[1, i].Value.ToString() == "")
                 {
                     dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    //dgvCorecciones.Rows.Insert(i, dgvDatos.Rows[i]);
                 }
             }
         }

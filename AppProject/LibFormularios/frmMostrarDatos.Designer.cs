@@ -95,6 +95,7 @@
             // 
             // dgvCorecciones
             // 
+            this.dgvCorecciones.AllowUserToDeleteRows = false;
             this.dgvCorecciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCorecciones.Location = new System.Drawing.Point(16, 141);
             this.dgvCorecciones.Name = "dgvCorecciones";
@@ -136,6 +137,7 @@
             this.BtnCorregir.TabIndex = 4;
             this.BtnCorregir.Text = "Corregir";
             this.BtnCorregir.UseVisualStyleBackColor = true;
+            this.BtnCorregir.Click += new System.EventHandler(this.BtnCorregir_Click);
             // 
             // BtnGuardarCorrecciones
             // 

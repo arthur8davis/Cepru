@@ -245,14 +245,38 @@ namespace LibFormularios
             }
         }
 
+        int colum;
+        int fila;
+        /// <summary>
+        /// carga el valor de una celda al texbox para su correccion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dgvCorecciones_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            //creo que antes de llenar el dgvcorrecion se debe guardar los datos antes de corregir
+            try
+            {
+                TxtCorreccion.Text = dgvCorecciones.CurrentCell.Value.ToString();
+                fila = dgvCorecciones.CurrentCell.RowIndex;
+                colum = dgvCorecciones.CurrentCell.ColumnIndex;
+            }
+            catch(Exception ex)
+            {
 
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //pasar los datos corregidos del DgvCorreccion al DgvDatos
+            //guardar un reporte de correcciones
+        }
 
+        private void BtnCorregir_Click(object sender, EventArgs e)
+        {
+            dgvCorecciones[colum, fila].Value = TxtCorreccion.Text;
+            
         }
     }
 }

@@ -1,0 +1,22 @@
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibFormularios\bin\Debug\LibFormularios.dll
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibFormularios\bin\Debug\LibFormularios.pdb
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibFormularios\bin\Debug\LibClases.dll
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibFormularios\bin\Debug\LibClases.pdb
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibFormularios\obj\Debug\LibFormularios.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibFormularios\obj\Debug\LibFormularios.dll
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibFormularios\obj\Debug\LibFormularios.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPadre.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppProject\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppProject\LibFormularios\obj\Debug\LibFormularios.frmEscuela.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppProject\LibFormularios\obj\Debug\LibFormularios.frmMostrarDatos.resources
+F:\AppProject\LibFormularios\bin\Debug\LibFormularios.dll
+F:\AppProject\LibFormularios\bin\Debug\LibFormularios.pdb
+F:\AppProject\LibFormularios\bin\Debug\LibClases.dll
+F:\AppProject\LibFormularios\bin\Debug\LibClases.pdb
+F:\AppProject\LibFormularios\obj\Debug\LibFormularios.csprojResolveAssemblyReference.cache
+F:\AppProject\LibFormularios\obj\Debug\LibFormularios.frmEscuela.resources
+F:\AppProject\LibFormularios\obj\Debug\LibFormularios.frmMostrarDatos.resources
+F:\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPadre.resources
+F:\AppProject\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache
+F:\AppProject\LibFormularios\obj\Debug\LibFormularios.dll
+F:\AppProject\LibFormularios\obj\Debug\LibFormularios.pdb

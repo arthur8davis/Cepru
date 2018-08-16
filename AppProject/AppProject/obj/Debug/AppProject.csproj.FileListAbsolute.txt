@@ -1,0 +1,26 @@
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\AppProject\bin\Debug\AppProject.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\AppProject\bin\Debug\AppProject.exe
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\AppProject\bin\Debug\AppProject.pdb
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\AppProject\obj\Debug\AppProject.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\AppProject\obj\Debug\AppProject.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\AppProject\obj\Debug\AppProject.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\AppProject\obj\Debug\AppProject.exe
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\AppProject\obj\Debug\AppProject.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppProject\AppProject\bin\Debug\LibFormularios.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppProject\AppProject\bin\Debug\LibClases.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppProject\AppProject\bin\Debug\LibFormularios.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppProject\AppProject\bin\Debug\LibClases.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppProject\AppProject\obj\Debug\AppProject.frmPrincipal.resources
+F:\AppProject\AppProject\bin\Debug\AppProject.exe.config
+F:\AppProject\AppProject\obj\Debug\AppProject.exe
+F:\AppProject\AppProject\obj\Debug\AppProject.pdb
+F:\AppProject\AppProject\bin\Debug\AppProject.exe
+F:\AppProject\AppProject\bin\Debug\AppProject.pdb
+F:\AppProject\AppProject\bin\Debug\LibFormularios.dll
+F:\AppProject\AppProject\bin\Debug\LibClases.dll
+F:\AppProject\AppProject\bin\Debug\LibFormularios.pdb
+F:\AppProject\AppProject\bin\Debug\LibClases.pdb
+F:\AppProject\AppProject\obj\Debug\AppProject.csprojResolveAssemblyReference.cache
+F:\AppProject\AppProject\obj\Debug\AppProject.frmPrincipal.resources
+F:\AppProject\AppProject\obj\Debug\AppProject.Properties.Resources.resources
+F:\AppProject\AppProject\obj\Debug\AppProject.csproj.GenerateResource.Cache

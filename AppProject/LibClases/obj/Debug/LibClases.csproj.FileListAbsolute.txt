@@ -1,0 +1,10 @@
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibClases\bin\Debug\LibClases.dll
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibClases\bin\Debug\LibClases.pdb
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibClases\obj\Debug\LibClases.dll
+c:\users\admin\documents\visual studio 2015\Projects\AppProject\LibClases\obj\Debug\LibClases.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppProject\LibClases\obj\Debug\LibClases.csprojResolveAssemblyReference.cache
+F:\AppProject\LibClases\bin\Debug\LibClases.dll
+F:\AppProject\LibClases\bin\Debug\LibClases.pdb
+F:\AppProject\LibClases\obj\Debug\LibClases.csprojResolveAssemblyReference.cache
+F:\AppProject\LibClases\obj\Debug\LibClases.dll
+F:\AppProject\LibClases\obj\Debug\LibClases.pdb

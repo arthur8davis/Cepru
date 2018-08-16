@@ -10,3 +10,12 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\AppCepru\AppCepru\obj\Debug
 D:\U\lavo V\Labo V 2.0\AppCepru\AppCepru\bin\Debug\AppCepru.exe.config
 D:\U\lavo V\Labo V 2.0\AppCepru\AppCepru\obj\Debug\AppCepru.exe
 D:\U\lavo V\Labo V 2.0\AppCepru\AppCepru\obj\Debug\AppCepru.pdb
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppCepru\AppCepru\bin\Debug\AppCepru.exe.config
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppCepru\AppCepru\obj\Debug\AppCepru.exe
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppCepru\AppCepru\obj\Debug\AppCepru.pdb
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppCepru\AppCepru\bin\Debug\AppCepru.exe
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppCepru\AppCepru\bin\Debug\AppCepru.pdb
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppCepru\AppCepru\obj\Debug\AppCepru.csprojResolveAssemblyReference.cache
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppCepru\AppCepru\obj\Debug\AppCepru.frmPrincipal.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppCepru\AppCepru\obj\Debug\AppCepru.Properties.Resources.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppCepru\AppCepru\obj\Debug\AppCepru.csproj.GenerateResource.Cache

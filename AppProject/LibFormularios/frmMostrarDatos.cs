@@ -216,7 +216,6 @@ namespace LibFormularios
                 if (dgvDatos[1, i].Value.ToString().Length != 8)
                 { //Si el codigo del alumno no es 8
                     dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                    
                 }
                 //Si los nombres de los alumnos una expresion de mas como ,;. y + o si el nombre esta vacio
                 /*else if (Regex.IsMatch(dgvDatos[1, i].Value.ToString(), exp) || dgvDatos[1, i].Value.ToString() == "")

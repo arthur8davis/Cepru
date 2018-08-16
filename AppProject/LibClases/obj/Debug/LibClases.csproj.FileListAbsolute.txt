@@ -13,8 +13,3 @@ C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibClases\bin\Debug\Lib
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibClases\obj\Debug\LibClases.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibClases\obj\Debug\LibClases.dll
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibClases\obj\Debug\LibClases.pdb
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibClases\bin\Debug\LibClases.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibClases\bin\Debug\LibClases.pdb
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibClases\obj\Debug\LibClases.csprojResolveAssemblyReference.cache
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibClases\obj\Debug\LibClases.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibClases\obj\Debug\LibClases.pdb

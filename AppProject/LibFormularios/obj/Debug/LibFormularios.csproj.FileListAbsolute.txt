@@ -20,3 +20,14 @@ F:\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPadre.resources
 F:\AppProject\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache
 F:\AppProject\LibFormularios\obj\Debug\LibFormularios.dll
 F:\AppProject\LibFormularios\obj\Debug\LibFormularios.pdb
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csprojResolveAssemblyReference.cache
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmEscuela.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmMostrarDatos.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPadre.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.pdb
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.pdb
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibClases.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibClases.pdb

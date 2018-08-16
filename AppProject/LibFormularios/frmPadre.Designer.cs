@@ -33,7 +33,9 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.pnTitulo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnContenido = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnBotones.SuspendLayout();
             this.pnTitulo.SuspendLayout();
             this.SuspendLayout();
@@ -43,9 +45,10 @@
             this.lbTitulo.BackColor = System.Drawing.SystemColors.HotTrack;
             this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitulo.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lbTitulo.Location = new System.Drawing.Point(3, 0);
+            this.lbTitulo.Location = new System.Drawing.Point(2, 1);
+            this.lbTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(731, 58);
+            this.lbTitulo.Size = new System.Drawing.Size(544, 47);
             this.lbTitulo.TabIndex = 0;
             this.lbTitulo.Text = "TITULO";
             this.lbTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -55,18 +58,20 @@
             this.pnBotones.Controls.Add(this.btnSalir);
             this.pnBotones.Controls.Add(this.btnGuardar);
             this.pnBotones.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnBotones.Location = new System.Drawing.Point(0, 61);
+            this.pnBotones.Location = new System.Drawing.Point(0, 50);
+            this.pnBotones.Margin = new System.Windows.Forms.Padding(2);
             this.pnBotones.Name = "pnBotones";
-            this.pnBotones.Size = new System.Drawing.Size(104, 501);
+            this.pnBotones.Size = new System.Drawing.Size(78, 416);
             this.pnBotones.TabIndex = 4;
             // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSalir.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnSalir.Location = new System.Drawing.Point(3, 446);
+            this.btnSalir.Location = new System.Drawing.Point(2, 362);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(103, 61);
+            this.btnSalir.Size = new System.Drawing.Size(77, 50);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -76,37 +81,64 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnGuardar.Location = new System.Drawing.Point(3, 0);
+            this.btnGuardar.Location = new System.Drawing.Point(2, 0);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(103, 61);
+            this.btnGuardar.Size = new System.Drawing.Size(77, 50);
             this.btnGuardar.TabIndex = 0;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = false;
             // 
             // pnTitulo
             // 
+            this.pnTitulo.Controls.Add(this.label1);
             this.pnTitulo.Controls.Add(this.lbTitulo);
             this.pnTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTitulo.Location = new System.Drawing.Point(0, 0);
+            this.pnTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.pnTitulo.Name = "pnTitulo";
-            this.pnTitulo.Size = new System.Drawing.Size(730, 61);
+            this.pnTitulo.Size = new System.Drawing.Size(1012, 50);
             this.pnTitulo.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Location = new System.Drawing.Point(546, 1);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(464, 47);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "CORRECCIONES";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnContenido
             // 
-            this.pnContenido.Location = new System.Drawing.Point(104, 61);
+            this.pnContenido.Location = new System.Drawing.Point(78, 50);
+            this.pnContenido.Margin = new System.Windows.Forms.Padding(2);
             this.pnContenido.Name = "pnContenido";
-            this.pnContenido.Size = new System.Drawing.Size(624, 510);
+            this.pnContenido.Size = new System.Drawing.Size(468, 414);
             this.pnContenido.TabIndex = 5;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(548, 51);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(464, 414);
+            this.panel1.TabIndex = 6;
             // 
             // frmPadre
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 562);
+            this.ClientSize = new System.Drawing.Size(1012, 466);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnBotones);
             this.Controls.Add(this.pnTitulo);
             this.Controls.Add(this.pnContenido);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPadre";
             this.Text = "frmPadre";
             this.pnBotones.ResumeLayout(false);
@@ -122,6 +154,8 @@
         protected System.Windows.Forms.Button btnSalir;
         protected System.Windows.Forms.Button btnGuardar;
         protected System.Windows.Forms.Panel pnTitulo;
+        protected System.Windows.Forms.Label label1;
         protected System.Windows.Forms.Panel pnContenido;
+        protected System.Windows.Forms.Panel panel1;
     }
 }

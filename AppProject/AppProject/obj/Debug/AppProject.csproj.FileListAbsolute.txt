@@ -24,3 +24,16 @@ F:\AppProject\AppProject\obj\Debug\AppProject.csprojResolveAssemblyReference.cac
 F:\AppProject\AppProject\obj\Debug\AppProject.frmPrincipal.resources
 F:\AppProject\AppProject\obj\Debug\AppProject.Properties.Resources.resources
 F:\AppProject\AppProject\obj\Debug\AppProject.csproj.GenerateResource.Cache
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\AppProject.exe.config
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.exe
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.pdb
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\AppProject.exe
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\AppProject.pdb
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\LibFormularios.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\LibClases.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\LibFormularios.pdb
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\LibClases.pdb
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.csprojResolveAssemblyReference.cache
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.frmPrincipal.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.Properties.Resources.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.csproj.GenerateResource.Cache

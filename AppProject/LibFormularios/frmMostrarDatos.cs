@@ -203,7 +203,7 @@ namespace LibFormularios
                         }
                     }
 
-                    MessageBox.Show("OPERACION REALIZADA EXISTOSAMENTE", "CONFIRMACION",);
+                    MessageBox.Show("OPERACION REALIZADA EXISTOSAMENTE", "CONFIRMACION");
                 }
             }
             catch (Exception e)
@@ -243,6 +243,16 @@ namespace LibFormularios
             {
                 Grabar();
             }
+        }
+
+        private void dgvCorecciones_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

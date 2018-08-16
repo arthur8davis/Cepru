@@ -52,7 +52,8 @@ namespace LibFormularios
                     aDataAdapter.Fill(aDataTable);
                     aConexion.Close();
                     dgvDatos.DataSource = null;
-                    dgvDatos.DataSource = aDataTable;
+                    dgvDatos.DataSource = aDataTable;                  
+                    
                 }
 
                 //string cadenaConexionArchivoExcel = "provider=Microsoft.Jet.OLEDB.4.0;Data Source='" + ruta + "';Extended Properties=\"Excel 8.0 xml; HDR = Yes\"";

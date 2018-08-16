@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Text;
+using System.Collections;
 using System.Windows.Forms;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -68,7 +69,7 @@ namespace LibFormularios
             }
         }
 
-        public void lecturaTxt(char Caracter, string ruta)
+        public void lecturaTxt(int col, string ruta, string tipo)
         {
             StreamReader reader = new StreamReader(ruta);
             string sline = "";
@@ -82,25 +83,78 @@ namespace LibFormularios
                 {
                     if (fila == 0)
                     {
-                        dgvDatos.ColumnCount = sline.Split(Caracter).Length;
-                        agregarfila(sline, Caracter, fila);
+                        dgvDatos.ColumnCount = col;
+                        switch (tipo)
+                        {
+                            case "faltante":
+                                agregarFilaFaltantes(sline, fila);
+                                break;
+                            case "identidad":
+                                agregarFilaIdentidad(sline, fila);
+                                break;
+                            case "respuesta":
+                                agregarFilaRespuesta(sline, fila);
+                                break;
+                            case "clave":
+                                agregarFilaClave(sline, fila);
+                                break;
+
+                        }
+//                        agregarfila(sline, fila);
                         //nombrarTablaTitulo(sline.Split(Caracter));
                         fila += 1;
                     }
                     else
                     {
-                        agregarfila(sline, Caracter, fila);
+                        switch (tipo)
+                        {
+                            case "faltante":
+                                agregarFilaFaltantes(sline, fila);
+                                break;
+                            case "identidad":
+                                agregarFilaIdentidad(sline, fila);
+                                break;
+                            case "respuesta":
+                                agregarFilaRespuesta(sline, fila);
+                                break;
+                            case "clave":
+                                agregarFilaClave(sline, fila);
+                                break;
+
+                        }
+                        //                        agregarfila(sline, fila);
+                        //nombrarTablaTitulo(sline.Split(Caracter));
                         fila += 1;
                     }
                 }
             } while (!(sline == null));
             reader.Close();
         }
-        public void agregarfila(string linea, char caracter, int fila)
+        public void agregarFilaFaltantes(string linea, int posicion)
         {
-            string[] arreglo = linea.Split(caracter);
-            dgvDatos.Rows.Add(arreglo);
+            string arreglo = linea.Substring(0,6);
+            dgvDatos.Rows.Insert(posicion, arreglo);
         }
+        public void agregarFilaIdentidad(string linea, int posicion)
+        {
+            string arreglo = linea.Substring(0, 6);
+            string arreglo2 = linea.Substring(6, 8);
+            dgvDatos.Rows.Insert(posicion, arreglo, arreglo2);
+            
+        }
+        public void agregarFilaRespuesta(string linea, int posicion)
+        {
+            string arreglo = linea.Substring(0, 6);
+            string arreglo2 = linea.Substring(6, 50);
+            dgvDatos.Rows.Insert(posicion, arreglo, arreglo2);
+        }
+        public void agregarFilaClave(string linea, int posicion)
+        {
+            string arreglo = linea.Substring(0, 1);
+            string arreglo2 = linea.Substring(1, 50);
+            dgvDatos.Rows.Insert(posicion, arreglo, arreglo2);
+        }
+
         public void CargarArchivoTxt()
         {
             string archivo = "";
@@ -117,26 +171,30 @@ namespace LibFormularios
                     
                     if (Regex.IsMatch(archivo, @"[3]")){
                         aux = "faltante";
+                        lecturaTxt(1, archivo, aux);
                         MessageBox.Show(aux);
                     }
-                    if (Regex.IsMatch(archivo, @"[4]"))
+                    else if (Regex.IsMatch(archivo, @"[4]"))
                     {
                         aux = "identidad";
+                        lecturaTxt(2, archivo, aux);
                         MessageBox.Show(aux);
                     }
-                    if (Regex.IsMatch(archivo, @"[5]"))
+                    else if (Regex.IsMatch(archivo, @"[5]"))
                     {
                         aux = "respuesta";
+                        lecturaTxt(2, archivo, aux);
                         MessageBox.Show(aux);
                     }
-                    if (Regex.IsMatch(archivo, @"[6]"))
+                    else //if (Regex.IsMatch(archivo, @"[6]"))
                     {
                         aux = "clave";
+                        lecturaTxt(2, archivo, aux);
                         MessageBox.Show(aux);
                     }
                     //archivo.Split()
                     //MessageBox.Show(archivo);
-                    lecturaTxt(';', archivo);
+                    //lecturaTxt(';', archivo);
                 }
             }
             catch (Exception e)
@@ -146,17 +204,53 @@ namespace LibFormularios
 
         }
 
+        public void buscarErrorIdentidad()
+        {
+            for (int i = 0; i < dgvDatos.Rows.Count; i++)
+            {
+                if (dgvDatos[1, i].Value.ToString().Length == 8)
+                { //Si el codigo del alumno no es 8
+                    dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                //Si los nombres de los alumnos una expresion de mas como ,;. y + o si el nombre esta vacio
+                /*else if (Regex.IsMatch(dgvDatos[1, i].Value.ToString(), exp) || dgvDatos[1, i].Value.ToString() == "")
+                {
+                    dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }*/
+            }
+        }
+
+        public void buscarErrorExcel()
+        {
+            string exp = @"[,\.\+\;]"; //Expresion regular
+            for (int i = 0; i < dgvDatos.Rows.Count; i++)
+            {
+                if (dgvDatos[0, i].Value.ToString().Length != 8)
+                { //Si el codigo del alumno no es 8
+                    dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                //Si los nombres de los alumnos una expresion de mas como ,;. y + o si el nombre esta vacio
+                else if (Regex.IsMatch(dgvDatos[1, i].Value.ToString(), exp) || dgvDatos[1, i].Value.ToString() == "")
+                {
+                    dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+            }
+        }
+
+
         private void cbBuscar_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(cbBuscar.SelectedItem.ToString() == "Excel")
             {
                 ImportarExcel();
+                buscarErrorExcel();
                 aux = "excel";
                 MessageBox.Show(aux);
             }
             else
             {
                 CargarArchivoTxt();
+                buscarErrorIdentidad();
             }
             /*switch (cbBuscar.SelectedItem.ToString())
             {

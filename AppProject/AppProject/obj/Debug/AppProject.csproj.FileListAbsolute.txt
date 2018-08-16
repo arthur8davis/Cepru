@@ -37,3 +37,16 @@ D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.csp
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.frmPrincipal.resources
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.Properties.Resources.resources
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\bin\Debug\AppProject.exe.config
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.exe
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.pdb
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\bin\Debug\AppProject.exe
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\bin\Debug\AppProject.pdb
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\bin\Debug\LibFormularios.dll
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\bin\Debug\LibClases.dll
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\bin\Debug\LibFormularios.pdb
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\bin\Debug\LibClases.pdb
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.frmPrincipal.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.Properties.Resources.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.csproj.GenerateResource.Cache

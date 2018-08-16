@@ -31,3 +31,14 @@ D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibFormula
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.pdb
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibClases.dll
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibClases.pdb
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.dll
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.pdb
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\bin\Debug\LibClases.dll
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\bin\Debug\LibClases.pdb
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmEscuela.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmMostrarDatos.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPadre.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.dll
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.pdb

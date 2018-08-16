@@ -229,34 +229,16 @@ namespace LibFormularios
         public void buscarErrorExcel()
         {
             string exp = @"[,\.\+\;]"; //Expresion regular
-            if (dgvDatos.Columns.Count > 3)
+            for (int i = 0; i < dgvDatos.Rows.Count; i++)
             {
-<<<<<<< HEAD
                 if (dgvDatos[0, i].Value.ToString().Length != 8)
                 { //Si el codigo del alumno no es 8
                     dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                    //dgvCorecciones.Rows.Insert(i, dgvDatos.Rows[i]);
                 }
                 //Si los nombres de los alumnos una expresion de mas como ,;. y + o si el nombre esta vacio
                 else if (Regex.IsMatch(dgvDatos[1, i].Value.ToString(), exp) || dgvDatos[1, i].Value.ToString() == "")
                 {
                     dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                    //dgvCorecciones.Rows.Insert(i, dgvDatos.Rows[i]);
-=======
-
-
-                for (int i = 0; i < dgvDatos.Rows.Count; i++)
-                {
-                    if (dgvDatos[0, i].Value.ToString().Length != 8)
-                    { //Si el codigo del alumno no es 8
-                        dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                    }
-                    //Si los nombres de los alumnos una expresion de mas como ,;. y + o si el nombre esta vacio
-                    else if (Regex.IsMatch(dgvDatos[1, i].Value.ToString(), exp) || dgvDatos[1, i].Value.ToString() == "")
-                    {
-                        dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                    }
->>>>>>> 26f9e26f5e3506f04d60600aa4a01cdc6c4757c9
                 }
             }
         }

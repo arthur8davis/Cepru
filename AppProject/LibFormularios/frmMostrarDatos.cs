@@ -89,6 +89,7 @@ namespace LibFormularios
                     if (fila == 0)
                     {
                         dgvDatos.ColumnCount = col;
+                        dgvCorecciones.ColumnCount = col;
                         switch (tipo)
                         {
                             case "faltante":
@@ -134,6 +135,7 @@ namespace LibFormularios
                 }
             } while (!(sline == null));
             reader.Close();
+            
         }
         public void agregarFilaFaltantes(string linea, int posicion)
         {
@@ -211,6 +213,7 @@ namespace LibFormularios
 
         public void buscarErrorIdentidad()
         {
+            /*
             for (int i = 0; i < dgvDatos.Rows.Count; i++)
             {
                 if (dgvDatos[1, i].Value.ToString().Length != 8)
@@ -222,8 +225,9 @@ namespace LibFormularios
                 /*else if (Regex.IsMatch(dgvDatos[1, i].Value.ToString(), exp) || dgvDatos[1, i].Value.ToString() == "")
                 {
                     dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                }*/
-            }
+                }
+
+            }*/
         }
 
         public void buscarErrorExcel()

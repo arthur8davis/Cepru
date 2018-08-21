@@ -42,11 +42,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmClaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClaves.Designer.cs">
+      <DependentUpon>frmClaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCorrecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCorrecciones.Designer.cs">
+      <DependentUpon>frmCorrecciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEscuela.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEscuela.Designer.cs">
       <DependentUpon>frmEscuela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFaltantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFaltantes.Designer.cs">
+      <DependentUpon>frmFaltantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIdentidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIdentidad.Designer.cs">
+      <DependentUpon>frmIdentidad.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMostrarDatos.cs">
       <SubType>Form</SubType>
@@ -60,6 +84,18 @@
     <Compile Include="frmPadre.Designer.cs">
       <DependentUpon>frmPadre.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPostulantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPostulantes.Designer.cs">
+      <DependentUpon>frmPostulantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRespuestasAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRespuestasAlumnos.Designer.cs">
+      <DependentUpon>frmRespuestasAlumnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,14 +105,32 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmClaves.resx">
+      <DependentUpon>frmClaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCorrecciones.resx">
+      <DependentUpon>frmCorrecciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEscuela.resx">
       <DependentUpon>frmEscuela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFaltantes.resx">
+      <DependentUpon>frmFaltantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIdentidad.resx">
+      <DependentUpon>frmIdentidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMostrarDatos.resx">
       <DependentUpon>frmMostrarDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPadre.resx">
       <DependentUpon>frmPadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPostulantes.resx">
+      <DependentUpon>frmPostulantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRespuestasAlumnos.resx">
+      <DependentUpon>frmRespuestasAlumnos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

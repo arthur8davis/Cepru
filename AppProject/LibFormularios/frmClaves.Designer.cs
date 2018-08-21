@@ -1,6 +1,6 @@
 ﻿namespace LibFormularios
 {
-    partial class frmEscuela
+    partial class frmClaves
     {
         /// <summary>
         /// Required designer variable.
@@ -34,21 +34,15 @@
             // 
             // lbTitulo
             // 
-            this.lbTitulo.Text = "ESCUELAS";
+            this.lbTitulo.Text = "CLAVE DE RESPUESTAS";
             // 
-            // pnBotones
-            // 
-            this.pnBotones.Size = new System.Drawing.Size(78, 415);
-            // 
-            // pnTitulo
-            // 
-            this.pnTitulo.Size = new System.Drawing.Size(1013, 50);
-            // 
-            // frmEscuela
+            // frmClaves
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1013, 465);
-            this.Name = "frmEscuela";
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1012, 466);
+            this.Name = "frmClaves";
+            this.Text = "frmClaves";
             this.pnBotones.ResumeLayout(false);
             this.pnTitulo.ResumeLayout(false);
             this.ResumeLayout(false);

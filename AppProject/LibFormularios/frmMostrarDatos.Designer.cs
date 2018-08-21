@@ -57,6 +57,8 @@
             this.pnContenido.Controls.Add(this.dgvDatos);
             this.pnContenido.Controls.Add(this.cbBuscar);
             this.pnContenido.Location = new System.Drawing.Point(82, 50);
+            this.pnContenido.Controls.SetChildIndex(this.cbBuscar, 0);
+            this.pnContenido.Controls.SetChildIndex(this.dgvDatos, 0);
             // 
             // panel1
             // 
@@ -66,6 +68,12 @@
             this.panel1.Controls.Add(this.TxtCorreccion);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.dgvCorecciones);
+            this.panel1.Controls.SetChildIndex(this.dgvCorecciones, 0);
+            this.panel1.Controls.SetChildIndex(this.label2, 0);
+            this.panel1.Controls.SetChildIndex(this.TxtCorreccion, 0);
+            this.panel1.Controls.SetChildIndex(this.label3, 0);
+            this.panel1.Controls.SetChildIndex(this.BtnCorregir, 0);
+            this.panel1.Controls.SetChildIndex(this.BtnGuardarCorrecciones, 0);
             // 
             // cbBuscar
             // 
@@ -73,7 +81,7 @@
             this.cbBuscar.Items.AddRange(new object[] {
             "Excel",
             "Texto"});
-            this.cbBuscar.Location = new System.Drawing.Point(189, 30);
+            this.cbBuscar.Location = new System.Drawing.Point(304, 30);
             this.cbBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.cbBuscar.Name = "cbBuscar";
             this.cbBuscar.Size = new System.Drawing.Size(92, 21);

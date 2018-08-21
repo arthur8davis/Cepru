@@ -36,8 +36,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pnContenido = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dgvErrores = new System.Windows.Forms.DataGridView();
             this.pnBotones.SuspendLayout();
             this.pnTitulo.SuspendLayout();
+            this.pnContenido.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvErrores)).BeginInit();
             this.SuspendLayout();
             // 
             // lbTitulo
@@ -110,11 +117,13 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(464, 47);
             this.label1.TabIndex = 1;
-            this.label1.Text = "CORRECCIONES";
+            this.label1.Text = "ERRORES";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnContenido
             // 
+            this.pnContenido.Controls.Add(this.button1);
+            this.pnContenido.Controls.Add(this.dgvDatos);
             this.pnContenido.Location = new System.Drawing.Point(78, 50);
             this.pnContenido.Margin = new System.Windows.Forms.Padding(2);
             this.pnContenido.Name = "pnContenido";
@@ -123,11 +132,43 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.dgvErrores);
             this.panel1.Location = new System.Drawing.Point(548, 51);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(464, 414);
             this.panel1.TabIndex = 6;
+            // 
+            // dgvDatos
+            // 
+            this.dgvDatos.AllowUserToAddRows = false;
+            this.dgvDatos.AllowUserToDeleteRows = false;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Location = new System.Drawing.Point(16, 79);
+            this.dgvDatos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.ReadOnly = true;
+            this.dgvDatos.RowTemplate.Height = 24;
+            this.dgvDatos.Size = new System.Drawing.Size(436, 318);
+            this.dgvDatos.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(187, 27);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Cargar Archivo";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // dgvErrores
+            // 
+            this.dgvErrores.AllowUserToDeleteRows = false;
+            this.dgvErrores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvErrores.Location = new System.Drawing.Point(19, 132);
+            this.dgvErrores.Name = "dgvErrores";
+            this.dgvErrores.Size = new System.Drawing.Size(426, 150);
+            this.dgvErrores.TabIndex = 1;
             // 
             // frmPadre
             // 
@@ -143,6 +184,10 @@
             this.Text = "frmPadre";
             this.pnBotones.ResumeLayout(false);
             this.pnTitulo.ResumeLayout(false);
+            this.pnContenido.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvErrores)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -157,5 +202,8 @@
         protected System.Windows.Forms.Label label1;
         protected System.Windows.Forms.Panel pnContenido;
         protected System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvDatos;
+        private System.Windows.Forms.DataGridView dgvErrores;
     }
 }

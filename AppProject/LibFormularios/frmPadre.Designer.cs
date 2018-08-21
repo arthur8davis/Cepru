@@ -35,15 +35,15 @@
             this.pnTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnContenido = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.dgvErrores = new System.Windows.Forms.DataGridView();
             this.pnBotones.SuspendLayout();
             this.pnTitulo.SuspendLayout();
             this.pnContenido.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvErrores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,14 +130,14 @@
             this.pnContenido.Size = new System.Drawing.Size(468, 414);
             this.pnContenido.TabIndex = 5;
             // 
-            // panel1
+            // button1
             // 
-            this.panel1.Controls.Add(this.dgvErrores);
-            this.panel1.Location = new System.Drawing.Point(548, 51);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(464, 414);
-            this.panel1.TabIndex = 6;
+            this.button1.Location = new System.Drawing.Point(187, 27);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Cargar Archivo";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // dgvDatos
             // 
@@ -152,14 +152,14 @@
             this.dgvDatos.Size = new System.Drawing.Size(436, 318);
             this.dgvDatos.TabIndex = 2;
             // 
-            // button1
+            // panel1
             // 
-            this.button1.Location = new System.Drawing.Point(187, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Cargar Archivo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.panel1.Controls.Add(this.dgvErrores);
+            this.panel1.Location = new System.Drawing.Point(548, 51);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(464, 414);
+            this.panel1.TabIndex = 6;
             // 
             // dgvErrores
             // 
@@ -185,8 +185,8 @@
             this.pnBotones.ResumeLayout(false);
             this.pnTitulo.ResumeLayout(false);
             this.pnContenido.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvErrores)).EndInit();
             this.ResumeLayout(false);
 
@@ -202,8 +202,8 @@
         protected System.Windows.Forms.Label label1;
         protected System.Windows.Forms.Panel pnContenido;
         protected System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dgvDatos;
-        private System.Windows.Forms.DataGridView dgvErrores;
+        protected System.Windows.Forms.Button button1;
+        protected System.Windows.Forms.DataGridView dgvDatos;
+        protected System.Windows.Forms.DataGridView dgvErrores;
     }
 }

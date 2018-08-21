@@ -30,11 +30,16 @@
         {
             this.pnBotones.SuspendLayout();
             this.pnTitulo.SuspendLayout();
+            this.pnContenido.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbTitulo
             // 
             this.lbTitulo.Text = "INDENTIFICADORES ";
+            // 
+            // button1
+            // 
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmIdentidad
             // 
@@ -45,6 +50,7 @@
             this.Text = "frmIdentidad";
             this.pnBotones.ResumeLayout(false);
             this.pnTitulo.ResumeLayout(false);
+            this.pnContenido.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

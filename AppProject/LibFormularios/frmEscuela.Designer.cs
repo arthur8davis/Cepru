@@ -30,6 +30,7 @@
         {
             this.pnBotones.SuspendLayout();
             this.pnTitulo.SuspendLayout();
+            this.pnContenido.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbTitulo
@@ -44,6 +45,10 @@
             // 
             this.pnTitulo.Size = new System.Drawing.Size(1013, 50);
             // 
+            // button1
+            // 
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmEscuela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -51,6 +56,7 @@
             this.Name = "frmEscuela";
             this.pnBotones.ResumeLayout(false);
             this.pnTitulo.ResumeLayout(false);
+            this.pnContenido.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

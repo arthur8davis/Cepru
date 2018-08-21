@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 using LibClases;
 
 namespace LibFormularios
@@ -16,7 +17,41 @@ namespace LibFormularios
             InitializeComponent();
             IniciarEntidad(new cEscuela());
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ImportarExcel();
+            procesar();
+        }
 
+        private void procesar()
+        {
+            
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Carrera", typeof(string));
+            dt.Columns.Add("Nombre", typeof(string));
+            dt.Columns.Add("Grupo", typeof(string));
+
+            string exp = @"[,\.\+\;]"; //Expresion regular
+            if (dgvDatos.Columns.Count > 3)
+            {
+                for (int i = 0; i < dgvDatos.Rows.Count; i++)
+                {
+                    if (dgvDatos[0, i].Value.ToString().Length != 8)
+                    { //Si el codigo del alumno no es 8
+                        dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                        dt.Rows.Add(dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString(), dgvDatos[2, i].Value.ToString());
+                    }
+                    //Si los nombres de los alumnos una expresion de mas como ,;. y + o si el nombre esta vacio
+                    else if (Regex.IsMatch(dgvDatos[1, i].Value.ToString(), exp) || dgvDatos[1, i].Value.ToString() == "")
+                    {
+                        dt.Rows.Add(dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString(), dgvDatos[2, i].Value.ToString(), dgvDatos[3, i].Value.ToString(), dgvDatos[4, i].Value.ToString(), dgvDatos[5, i].Value.ToString(), dgvDatos[6, i].Value.ToString(), dgvDatos[7, i].Value.ToString());
+                        dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    }
+                }
+            }
+            dgvErrores.DataSource = dt;
+            dgvErrores.AutoResizeColumns();
+        }
         //=================== REDEFINICION DE LOS METODOS VIRTUALES ==========================
 
         //-- Establecer los valores que iran a la tabla

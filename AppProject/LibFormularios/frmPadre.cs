@@ -268,8 +268,9 @@ namespace LibFormularios
         public void agregarFilaRespuesta(string linea, int posicion)
         {
             string arreglo = linea.Substring(0, 6);
-            string arreglo2 = linea.Substring(6, 50);
-            dgvDatos.Rows.Insert(posicion, arreglo, arreglo2);
+            string arreglo2 = linea.Substring(6, 8);
+            string arreglo3 = linea.Substring(8, 50);
+            dgvDatos.Rows.Insert(posicion, arreglo, arreglo2,arreglo3);
         }
         public void agregarFilaClave(string linea, int posicion)
         {

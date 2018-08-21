@@ -17,5 +17,20 @@ namespace LibFormularios
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CargarArchivoTxt();
+        }
+
+        private void Procesar()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Codido Tarjeta", typeof(string));
+            dt.Columns.Add("Tema", typeof(string));
+            dt.Columns.Add("Respuesta", typeof(string));
+
+            
+        }
     }
 }

@@ -20,12 +20,31 @@ namespace LibFormularios
         private void button1_Click(object sender, EventArgs e)
         {
             CargarArchivoTxt();
-
+            procesar();
         
         }
 
         private void procesar()
         {
+
+
+            DataTable dte = new DataTable();
+            dte.Columns.Add("Codigo de Tarjeta", typeof(string));
+            dte.Columns.Add("Codigo de Postulante", typeof(string));
+
+            for (int i = 0; i < dgvDatos.Rows.Count; i++)
+            {
+                if (dgvDatos[0,i].Value.ToString().Trim().Length != 6 || dgvDatos[1, i].Value.ToString().Trim().Length != 8 || dgvDatos[0, i].Value.ToString().Contains(" ") || dgvDatos[1, i].Value.ToString().Contains(" "))
+                {
+                    dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    dte.Rows.Add(dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString());
+                }
+            }
+            
+
+            dgvErrores.DataSource = dte;
+            dgvErrores.AutoResizeColumns();
+
 
         }
     }

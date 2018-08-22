@@ -268,7 +268,7 @@ namespace LibFormularios
         public void agregarFilaRespuesta(string linea, int posicion)
         {
             string arreglo = linea.Substring(0, 6);
-            string arreglo2 = linea.Substring(6, 8);
+            string arreglo2 = linea.Substring(6,1);
             string arreglo3 = linea.Substring(8, 50);
             dgvDatos.Rows.Insert(posicion, arreglo, arreglo2,arreglo3);
         }
@@ -309,7 +309,7 @@ namespace LibFormularios
                     else if (Regex.IsMatch(archivo, @"[5]"))
                     {
                         aux = "respuesta";
-                        lecturaTxt(2, archivo, aux);
+                        lecturaTxt(3, archivo, aux);
                         MessageBox.Show(aux);
                     }
                     else //if (Regex.IsMatch(archivo, @"[6]"))

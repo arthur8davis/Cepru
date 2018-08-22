@@ -16,5 +16,30 @@ namespace LibFormularios
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CargarArchivoTxt();
+            procesar();
+        }
+
+        private void procesar()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Tema", typeof(string));
+            dt.Columns.Add("Respuesta", typeof(string));
+
+            for (int i = 0; i < dgvDatos.Rows.Count; i++)
+            {
+                if (dgvDatos[0, i].Value.ToString().Trim().Length != 1 || dgvDatos[1, i].Value.ToString().Trim().Length != 50 || dgvDatos[0, i].Value.ToString().Contains(" ") || dgvDatos[1, i].Value.ToString().Contains(" "))
+                {
+                    dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    dt.Rows.Add(dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString());
+                }
+            }
+
+            dgvErrores.DataSource = dt;
+            dgvErrores.AutoResizeColumns();
+        }
     }
 }

@@ -21,6 +21,8 @@ namespace LibFormularios
         {
             CargarArchivoTxt();
             procesar();
+            panel1.Visible = false;
+            label1.Visible = false;
         }
 
         private void procesar()

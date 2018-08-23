@@ -36,8 +36,9 @@ namespace LibFormularios
             {
                 if (dgvDatos[0,i].Value.ToString().Trim().Length != 6 || dgvDatos[1, i].Value.ToString().Trim().Length != 8 || dgvDatos[0, i].Value.ToString().Contains(" ") || dgvDatos[1, i].Value.ToString().Contains(" "))
                 {
-                    dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    //dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
                     dte.Rows.Add(dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString());
+                    dgvDatos.Rows.RemoveAt(i);
                 }
             }
             

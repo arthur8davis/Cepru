@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace LibFormularios
 {
@@ -30,13 +31,14 @@ namespace LibFormularios
             dt.Columns.Add("Codido Tarjeta", typeof(string));
             dt.Columns.Add("Tema", typeof(string));
             dt.Columns.Add("Respuesta", typeof(string));
-
+            string exp = @"[,\.\+\;\*\' ']"; //Expresion regular
             for (int i = 0; i < dgvDatos.Rows.Count; i++)
             {
-                if (dgvDatos[0, i].Value.ToString().Trim().Length != 6 || dgvDatos[1, i].Value.ToString().Trim().Length != 1 || dgvDatos[0, i].Value.ToString().Contains(" ") || dgvDatos[1, i].Value.ToString().Contains(" "))
+                if (dgvDatos[0, i].Value.ToString().Trim().Length != 6 || dgvDatos[1, i].Value.ToString().Trim().Length != 1 /*|| dgvDatos[0, i].Value.ToString().Contains(" ") || dgvDatos[1, i].Value.ToString().Contains(" ")*/ || (Regex.IsMatch(dgvDatos[0, i].Value.ToString(), exp))|| (Regex.IsMatch(dgvDatos[1, i].Value.ToString(), exp)))
                 {
-                    dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    //dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
                     dt.Rows.Add(dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString(), dgvDatos[2, i].Value.ToString());
+                    dgvDatos.Rows.RemoveAt(i);
                 }
             }
 

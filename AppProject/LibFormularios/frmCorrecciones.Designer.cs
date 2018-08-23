@@ -30,14 +30,14 @@
         {
             this.lbTitulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.BtnGuardarCorrecciones = new System.Windows.Forms.Button();
             this.BtnCorregir = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtCorreccion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvCorecciones = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCorecciones)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +69,34 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(552, 357);
             this.panel1.TabIndex = 13;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Escuelas",
+            "Postulantes",
+            "Indetidades grupo A",
+            "Indetidades grupo B",
+            "Indetidades grupo C",
+            "Indetidades grupo D",
+            "Respuestas de alumnos grupo A",
+            "Respuestas de alumnos grupo B",
+            "Respuestas de alumnos grupo C",
+            "Respuestas de alumnos grupo D"});
+            this.comboBox1.Location = new System.Drawing.Point(219, 13);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(218, 21);
+            this.comboBox1.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(67, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Realizar correcciones de:";
             // 
             // BtnGuardarCorrecciones
             // 
@@ -116,40 +144,14 @@
             // 
             // dgvCorecciones
             // 
+            this.dgvCorecciones.AllowUserToAddRows = false;
             this.dgvCorecciones.AllowUserToDeleteRows = false;
             this.dgvCorecciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCorecciones.Location = new System.Drawing.Point(67, 139);
             this.dgvCorecciones.Name = "dgvCorecciones";
+            this.dgvCorecciones.ReadOnly = true;
             this.dgvCorecciones.Size = new System.Drawing.Size(426, 150);
             this.dgvCorecciones.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(67, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 13);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Realizar correcciones de:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Escuelas",
-            "Postulantes",
-            "Indetidades grupo A",
-            "Indetidades grupo B",
-            "Indetidades grupo C",
-            "Indetidades grupo D",
-            "Respuestas de alumnos grupo A",
-            "Respuestas de alumnos grupo B",
-            "Respuestas de alumnos grupo C",
-            "Respuestas de alumnos grupo D"});
-            this.comboBox1.Location = new System.Drawing.Point(219, 13);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(218, 21);
-            this.comboBox1.TabIndex = 13;
             // 
             // frmCorrecciones
             // 

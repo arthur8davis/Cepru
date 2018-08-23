@@ -37,6 +37,10 @@
             // 
             this.lbTitulo.Text = "CLAVE DE RESPUESTAS";
             // 
+            // pnTitulo
+            // 
+            this.pnTitulo.Size = new System.Drawing.Size(548, 50);
+            // 
             // button1
             // 
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -45,7 +49,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1012, 466);
+            this.ClientSize = new System.Drawing.Size(548, 466);
             this.Name = "frmClaves";
             this.Text = "frmClaves";
             this.pnBotones.ResumeLayout(false);

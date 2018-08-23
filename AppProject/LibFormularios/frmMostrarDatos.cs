@@ -275,49 +275,7 @@ namespace LibFormularios
                     bre
             }*/
         }
-        public void GrabarExcel()
-        {
-            try
-            {
-                if (dgvDatos.Columns.Count == 3)
-                {
-                    IniciarEntidad(new cEscuela());
-                    for (int i = 0; i < dgvDatos.Rows.Count; i++)
-                    {//Recorremos todo el datagrid e insertamos cada fila a nuestra BD de nuestro archivo de carreras
-                        string[] Atributos = { dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString(), dgvDatos[2, i].Value.ToString() };
-                        aEntidad.Insertar(Atributos);
-                    }
-                    MessageBox.Show("OPERACION REALIZADA EXISTOSAMENTE", "CONFIRMACION");
-                }
-                else {
-                    //char separador = '-';
-                    for (int i = 0; i < dgvDatos.Rows.Count; i++)
-                    {//Recorremos todo el datagrid e insertamos cada fila a nuestra BD de nuestros postulantes
-                        //IniciarEntidad(new CAlumno());
-                       // string[] Nombre = dgvDatos[1, i].Value.ToString().Split(separador);
-                        //string[] Atributos = { dgvDatos[0, i].Value.ToString(), Nombre[0], Nombre[1], Nombre[2], dgvDatos[2, i].Value.ToString() };
-                        //aEntidad.Insertar(Atributos);
-                        IniciarEntidad(new cPostulante());
-                        if (dgvDatos[6, i].Value.ToString() == "1")
-                        {
-                            string[] Atributos2 = { dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString(), dgvDatos[2, i].Value.ToString(), dgvDatos[3, i].Value.ToString(), dgvDatos[4, i].Value.ToString(), dgvDatos[5, i].Value.ToString(), "Masculino", dgvDatos[7, i].Value.ToString(), "no" };
-                            aEntidad.Insertar(Atributos2);
-                        }
-                        else
-                        {
-                            string[] Atributos2 = { dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString(), dgvDatos[2, i].Value.ToString(), dgvDatos[3, i].Value.ToString(), dgvDatos[4, i].Value.ToString(), dgvDatos[5, i].Value.ToString(), "Femenino", dgvDatos[7, i].Value.ToString(), "no" };
-                            aEntidad.Insertar(Atributos2);
-                        }
-                    }
-
-                    MessageBox.Show("OPERACION REALIZADA EXISTOSAMENTE", "CONFIRMACION");
-                }
-            }
-            catch (Exception e)
-            {
-                //MessageBox.Show(e.ToString());
-            }
-        }
+        
 
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -325,11 +283,11 @@ namespace LibFormularios
             switch (aux)
             {
                 case "excel":
-                    GrabarExcel();
+                    //GrabarExcel();
                     break;
                 case "faltantes":
                     IniciarEntidad(new cFaltante());
-                    Grabar();
+                   
                     break;
                 case "identidad":
                     IniciarEntidad(new cIdentidad());
@@ -344,7 +302,7 @@ namespace LibFormularios
             }
             if (aux == "excel")
             {
-                GrabarExcel();
+                //GrabarExcel();
             }
             if(aux == "faltantes")
             {

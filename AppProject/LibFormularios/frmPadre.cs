@@ -11,12 +11,16 @@ using System.Data.OleDb;
 using System.IO;
 using System.Text.RegularExpressions;
 using LibClases;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+
 
 namespace LibFormularios
 {
     public partial class frmPadre : Form
-
     {
+        SqlConnection cn;
         private OleDbConnection aConexion;
         private OleDbDataAdapter aDataAdapter;
         private DataTable aDataTable;
@@ -29,6 +33,13 @@ namespace LibFormularios
         public frmPadre()
         {
             InitializeComponent();
+            try
+            {
+                cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconex"].ConnectionString);
+            } catch
+            {
+
+            }
         }
 
         //------------------- Metodos base------------------------
@@ -105,48 +116,35 @@ namespace LibFormularios
             }
         }
 
+        public virtual string NombreTabla()
+        {
+            return null;//Obtener el nombre de la| tabla
+        }
+        public virtual DataTable Tabla()
+        {
+            return null;//Obtener el datatable
+        }
         //----------------------------
         public virtual void Grabar()
         {
             try
             {
-                if (EsRegistroValido())
-                {   //-- Recuperar atributos, el primer atributo es la clave
-                    string[] Atributos = AsignarValoresAtributos();
-                    //-- Verificar si existe clave primaria
-                    if (aEntidad.ExisteClavePrimaria(Atributos))
-                        aEntidad.Actualizar(Atributos);
-                    else
-                        aEntidad.Insertar(Atributos);
-                    //-- Inicializar el formulario
-                    MessageBox.Show("OPERACION REALIZADA EXITOSAMENTE", "CONFIRMACION");
-                    InicializarAtributos();
-                    ListarRegistros();
-                }
-                else
-                    MessageBox.Show("DEBE COMPLETAR EL LLENADO DEL FORMULARIO", "ALERTA");
-
+                cn.Open();
+                SqlBulkCopy importar = default(SqlBulkCopy);
+                importar = new SqlBulkCopy(cn);
+                importar.DestinationTableName = NombreTabla();
+                importar.WriteToServer(Tabla());
+                cn.Close();
+                MessageBox.Show("LOS DATOS SE GUARDARON EXITOSAMENTE", "CONFIRMACION");
+                Close();
             }
-            catch (Exception e)
+            catch (Exception n)
             {
-                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
+                MessageBox.Show(n.ToString()/*"ERROR AL GUARDAR LOS DATOS"*/);
             }
         }
 
         //----------------------------
-
-
-        //=================== EVENTOS ==========================
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            Grabar();
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
 
         public void ImportarExcel()
         {
@@ -175,12 +173,6 @@ namespace LibFormularios
                     aConexion.Close();
                     dgvDatos.DataSource = null;
                     dgvDatos.DataSource = aDataTable;
-                    /*
-                    dgvErrores.ColumnCount = dgvDatos.ColumnCount;
-                    for (int i = 0; i < dgvDatos.ColumnCount; i++)
-                    {
-                        dgvErrores.Columns[i].Name = dgvDatos.Columns[i].Name.ToString();
-                    }*/
                 }
             }
             catch (Exception e)
@@ -188,7 +180,7 @@ namespace LibFormularios
 
                 MessageBox.Show(e.ToString());
             }
-}
+        }
         public void lecturaTxt(int col, string ruta, string tipo)
         {
             StreamReader reader = new StreamReader(ruta);
@@ -268,9 +260,9 @@ namespace LibFormularios
         public void agregarFilaRespuesta(string linea, int posicion)
         {
             string arreglo = linea.Substring(0, 6);
-            string arreglo2 = linea.Substring(6,1);
+            string arreglo2 = linea.Substring(6, 1);
             string arreglo3 = linea.Substring(8, 50);
-            dgvDatos.Rows.Insert(posicion, arreglo, arreglo2,arreglo3);
+            dgvDatos.Rows.Insert(posicion, arreglo, arreglo2, arreglo3);
         }
         public void agregarFilaClave(string linea, int posicion)
         {
@@ -329,5 +321,19 @@ namespace LibFormularios
             }
 
         }
+
+
+        //=================== EVENTOS ==========================
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            Grabar();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
     }
 }

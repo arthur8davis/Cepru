@@ -43,38 +43,5 @@ namespace LibFormularios
             dgvErrores.DataSource = dt;
             dgvErrores.AutoResizeColumns();
         }
-
-        public override string NombreTabla()
-        {
-            string nombre = "TClaveRespuesta";
-            return nombre;
-        }
-        public override DataTable Tabla()
-        {
-            DataTable dt = CreateDataTable();
-            dgvDatos.Columns.Clear();
-            return dt;
-        }
-
-        private DataTable CreateDataTable()
-        {
-            // Creamos un nuevo objeto DataTable
-
-            DataTable dt = new DataTable();
-
-            dt.Columns.Add("tema", typeof(string));
-            dt.Columns.Add("clave", typeof(string));
-            for (int i = 0; i < dgvDatos.Rows.Count; i++)
-            {
-                dt.Rows.Add(dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString());
-            }
-
-            return dt;
-        }
-
-        public override void Grabar()
-        {
-            base.Grabar();
-        }
     }
 }

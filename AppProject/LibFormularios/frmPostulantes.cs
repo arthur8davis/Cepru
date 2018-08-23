@@ -44,13 +44,15 @@ namespace LibFormularios
                 {
                     if (dgvDatos[0, i].Value.ToString().Length != 8)
                     { //Si el codigo del alumno no es 8
-                        dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                        //dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                        dgvDatos.Rows.RemoveAt(i);
                     }
                     //Si los nombres de los alumnos una expresion de mas como ,;. y + o si el nombre esta vacio
                     else if (Regex.IsMatch(dgvDatos[1, i].Value.ToString(), exp) || dgvDatos[1, i].Value.ToString() == "")
                     {
                         dt.Rows.Add(dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString(), dgvDatos[2, i].Value.ToString(), dgvDatos[3, i].Value.ToString(), dgvDatos[4, i].Value.ToString(), dgvDatos[5, i].Value.ToString(), dgvDatos[6, i].Value.ToString(), dgvDatos[7, i].Value.ToString());
-                        dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                        //dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                        dgvDatos.Rows.RemoveAt(i);
                     }
                 }
             }

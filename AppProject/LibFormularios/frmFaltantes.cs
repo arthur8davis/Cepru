@@ -34,8 +34,9 @@ namespace LibFormularios
                 {
                     if (dgvDatos[0, i].Value.ToString().Trim().Length != 8)
                     { //Si el codigo del alumno no es 8
-                        dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                        //dgvDatos.Rows[i].DefaultCellStyle.BackColor = Color.Red;
                         dt.Rows.Add(dgvDatos[0, i].Value.ToString());
+                        dgvDatos.Rows.RemoveAt(i);
                     }
                     
                 }

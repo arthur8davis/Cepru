@@ -48,3 +48,9 @@ D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormula
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmFaltantes.resources
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPostulantes.resources
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmRespuestasAlumnos.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmClaves.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmCorrecciones.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmFaltantes.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmIdentidad.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPostulantes.resources
+C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmRespuestasAlumnos.resources

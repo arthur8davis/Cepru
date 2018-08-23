@@ -64,5 +64,44 @@ namespace LibFormularios
                 MessageBox.Show("no ha datos");
             }
         }
+
+        public override string NombreTabla()
+        {
+            string nombre = "TPostulante";
+            return nombre;
+        }
+        public override DataTable Tabla()
+        {
+            DataTable dt = CreateDataTable();
+            dgvDatos.Columns.Clear();
+            return dt;
+        }
+
+        private DataTable CreateDataTable()
+        {
+            // Creamos un nuevo objeto DataTable
+
+            DataTable dt = new DataTable();
+
+            dt.Columns.Add("codigo", typeof(string));
+            dt.Columns.Add("nombre", typeof(string));
+            dt.Columns.Add("carrera", typeof(string));
+            dt.Columns.Add("ciclo", typeof(string));
+            dt.Columns.Add("aula", typeof(string));
+            dt.Columns.Add("carpeta", typeof(string));
+            dt.Columns.Add("sexo", typeof(string));
+            dt.Columns.Add("grupo", typeof(string));
+            for (int i = 0; i < dgvDatos.Rows.Count; i++)
+            {
+                dt.Rows.Add(dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString(), dgvDatos[2, i].Value.ToString(), dgvDatos[3, i].Value.ToString(), dgvDatos[4, i].Value.ToString(), dgvDatos[5, i].Value.ToString(), dgvDatos[6, i].Value.ToString(), dgvDatos[7, i].Value.ToString());
+            }
+
+            return dt;
+        }
+
+        public override void Grabar()
+        {
+            base.Grabar();
+        }
     }
 }

@@ -26,7 +26,6 @@ namespace AppProject
             Escuelas.ShowDialog();
             CkbEscuelas.Checked = true;
             BtnPostulantes.Enabled = true;
-            BtnCorreciones.Enabled = true;
             BtnEscuelas.Enabled = false;
             BtnPostulantes.Focus();
         }

@@ -12,10 +12,12 @@ namespace LibFormularios
 {
     public partial class frmEscuela : LibFormularios.frmPadre
     {
+        
+
         public frmEscuela()
         {
             InitializeComponent();
-            IniciarEntidad(new cEscuela());
+           // IniciarEntidad(new cEscuela());
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -54,65 +56,40 @@ namespace LibFormularios
             dgvErrores.DataSource = dt;
             dgvErrores.AutoResizeColumns();
         }
-        //=================== REDEFINICION DE LOS METODOS VIRTUALES ==========================
 
-        //-- Establecer los valores que iran a la tabla
-        /*public override string[] AsignarValoresAtributos()
+        public override string NombreTabla()
         {
-            return new string[] { TxtCodLibro.Text, TxtTitulo.Text, TxtAutor.Text, TxtEditorial.Text, TxtAnio.Text };
+            string nombre = "TEscuelas";
+            return nombre;
         }
-
-        //---------------------------------------------------------------
-        //-- Mostrar los datos de un registro
-        public override void MostrarDatos()
-        {   //-- muestra la informacion contenida en el dataset de CLibro
-            TxtTitulo.Text = aEntidad.ValorAtributo("Titulo");
-            TxtAutor.Text = aEntidad.ValorAtributo("Autor");
-            TxtEditorial.Text = aEntidad.ValorAtributo("Editorial");
-            TxtAnio.Text = aEntidad.ValorAtributo("Anio");
-        }
-
-        //--------------------------------------------------------
-        //-- Iniciar los atributos clave y no clave en blanco
-        public override void InicializarAtributoClave()
+        public override DataTable Tabla()
         {
-            TxtCodLibro.Text = "";
-        }
-        public override void InicializarAtributoNoClave()
-        {
-            TxtTitulo.Text = "";
-            TxtAutor.Text = "";
-            TxtEditorial.Text = "";
-            TxtAnio.Text = "";
+            DataTable dt = CreateDataTable();
+            dgvDatos.Columns.Clear();
+            return dt;
         }
 
-        //--------------------------------------------------------
-        //-- Listar los registros y mostrarlos en el datagrid
-        public override void ListarRegistros()
-        {   //-- Mostrar todos los libros de la tabla en el grid
-            DgvLibros.DataSource = aEntidad.ListaGeneral();
-        }
-
-        //------------------------------------------------------
-        //--verificar los campos obligados(codigo y titulo) esten llenos
-        public override bool EsRegistroValido()
+        private DataTable CreateDataTable()
         {
-            if (TxtCodLibro.Text.Trim() != "" && TxtTitulo.Text.Trim() != "")
+            // Creamos un nuevo objeto DataTable
+
+            DataTable dt = new DataTable();
+
+            dt.Columns.Add("codigo", typeof(string));
+            dt.Columns.Add("nombre", typeof(string));
+            dt.Columns.Add("grupo", typeof(string));
+            for (int i = 0; i < dgvDatos.Rows.Count; i++)
             {
-                return true;
+                dt.Rows.Add(dgvDatos[0, i].Value.ToString(), dgvDatos[1, i].Value.ToString(), dgvDatos[2, i].Value.ToString());
             }
-            else
-                return false;
+
+            return dt;
         }
 
-        private void TxtCodLibro_Leave(object sender, EventArgs e)
+        public override void Grabar()
         {
-            ProcesarClave();
+            base.Grabar();
         }
 
-        private void frmLibro_Load(object sender, EventArgs e)
-        {
-            ListarRegistros();
-        }*/
     }
 }

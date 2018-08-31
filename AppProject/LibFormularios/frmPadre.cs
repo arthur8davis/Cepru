@@ -290,25 +290,25 @@ namespace LibFormularios
                     {
                         aux = "faltante";
                         lecturaTxt(1, archivo, aux);
-                        MessageBox.Show(aux);
+                        //MessageBox.Show(aux);
                     }
                     else if (Regex.IsMatch(archivo, @"[4]"))
                     {
                         aux = "identidad";
                         lecturaTxt(2, archivo, aux);
-                        MessageBox.Show(aux);
+                        //MessageBox.Show(aux);
                     }
                     else if (Regex.IsMatch(archivo, @"[5]"))
                     {
                         aux = "respuesta";
                         lecturaTxt(3, archivo, aux);
-                        MessageBox.Show(aux);
+                        //MessageBox.Show(aux);
                     }
                     else //if (Regex.IsMatch(archivo, @"[6]"))
                     {
                         aux = "clave";
                         lecturaTxt(2, archivo, aux);
-                        MessageBox.Show(aux);
+                        //MessageBox.Show(aux);
                     }
                     //archivo.Split()
                     //MessageBox.Show(archivo);

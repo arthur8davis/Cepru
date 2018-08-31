@@ -27,6 +27,7 @@ namespace AppProject
             CkbEscuelas.Checked = true;
             BtnPostulantes.Enabled = true;
             BtnEscuelas.Enabled = false;
+            BtnCorreciones.Enabled = true;
             BtnPostulantes.Focus();
         }
 
@@ -130,7 +131,7 @@ namespace AppProject
             claves.ShowDialog();
             CkbClaves.Checked = true;
             MessageBox.Show("CARGADO DE DATOS EXITOSO - PROCEDA A REALZIAR CORRECCIONES");
-            BtnCorreciones.Enabled = true;
+            //BtnCorreciones.Enabled = true;
             BtnClaveRespuestas.Enabled = false;
         }
 

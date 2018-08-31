@@ -38,8 +38,16 @@
             this.TxtCorreccion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvCorecciones = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbCoincidencia = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CbCoincidencias = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCorecciones)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbTitulo
@@ -76,14 +84,8 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Escuelas",
             "Postulantes",
-            "Indetidades grupo A",
-            "Indetidades grupo B",
-            "Indetidades grupo C",
-            "Indetidades grupo D",
-            "Respuestas de alumnos grupo A",
-            "Respuestas de alumnos grupo B",
-            "Respuestas de alumnos grupo C",
-            "Respuestas de alumnos grupo D"});
+            "Indetidades",
+            "Respuestas de alumnos"});
             this.comboBox1.Location = new System.Drawing.Point(219, 13);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(218, 21);
@@ -153,11 +155,78 @@
             this.dgvCorecciones.Size = new System.Drawing.Size(426, 150);
             this.dgvCorecciones.TabIndex = 6;
             // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label4.Location = new System.Drawing.Point(560, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(355, 47);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "COINCIDENCIAS";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.CbCoincidencias);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.tbCoincidencia);
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Location = new System.Drawing.Point(561, 52);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(354, 355);
+            this.panel2.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(30, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(122, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Buscar Coincidencia en:";
+            // 
+            // tbCoincidencia
+            // 
+            this.tbCoincidencia.Location = new System.Drawing.Point(33, 81);
+            this.tbCoincidencia.Name = "tbCoincidencia";
+            this.tbCoincidencia.Size = new System.Drawing.Size(291, 20);
+            this.tbCoincidencia.TabIndex = 19;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(4, 137);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(347, 150);
+            this.dataGridView1.TabIndex = 18;
+            // 
+            // CbCoincidencias
+            // 
+            this.CbCoincidencias.FormattingEnabled = true;
+            this.CbCoincidencias.Items.AddRange(new object[] {
+            "Escuelas",
+            "Postulantes",
+            "Identidad",
+            "Respuestas Alumnos"});
+            this.CbCoincidencias.Location = new System.Drawing.Point(203, 11);
+            this.CbCoincidencias.Name = "CbCoincidencias";
+            this.CbCoincidencias.Size = new System.Drawing.Size(121, 21);
+            this.CbCoincidencias.TabIndex = 21;
+            this.CbCoincidencias.SelectedIndexChanged += new System.EventHandler(this.CbCoincidencias_SelectedIndexChanged);
+            // 
             // frmCorrecciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 408);
+            this.ClientSize = new System.Drawing.Size(915, 408);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbTitulo);
             this.Name = "frmCorrecciones";
@@ -165,6 +234,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCorecciones)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -181,5 +253,11 @@
         private System.Windows.Forms.DataGridView dgvCorecciones;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbCoincidencia;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox CbCoincidencias;
     }
 }

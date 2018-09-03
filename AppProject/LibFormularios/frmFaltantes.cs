@@ -19,7 +19,7 @@ namespace LibFormularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CargarArchivoTxt();
+            CargarArchivoTxt("txt Files | 3. AlumnosFaltantes.txt");
             procesar();
 
         }

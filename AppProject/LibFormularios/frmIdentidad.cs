@@ -19,7 +19,7 @@ namespace LibFormularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CargarArchivoTxt();
+            CargarArchivoTxt("Txt Files |*Identidad*.sdf");
             procesar();
         
         }

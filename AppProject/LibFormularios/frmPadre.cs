@@ -143,7 +143,11 @@ namespace LibFormularios
                 MessageBox.Show(n.ToString()/*"ERROR AL GUARDAR LOS DATOS"*/);
             }
         }
+        //-----------------------------------
+        public virtual void GuardarErrores()
+        {
 
+        }
         //----------------------------
 
         public void ImportarExcel()
@@ -272,13 +276,13 @@ namespace LibFormularios
         }
 
 
-        public void CargarArchivoTxt()
+        public void CargarArchivoTxt(string Filtro)
         {
             string archivo = "";
             try
             {
                 OpenFileDialog open = new OpenFileDialog();
-                open.Filter = "txt Files |*.txt;*.sdf";
+                open.Filter = Filtro;
                 //open.Title = "Seleccione el archivo de Escuelas o Carreras";
                 open.ShowDialog();
                 if (!string.IsNullOrEmpty(open.FileName))

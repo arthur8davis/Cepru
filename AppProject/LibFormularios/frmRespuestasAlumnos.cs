@@ -21,7 +21,7 @@ namespace LibFormularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CargarArchivoTxt();
+            CargarArchivoTxt("txt Files | *RespuestasAlumnos*.sdf");
             Procesar();
         }
 

@@ -82,5 +82,39 @@ namespace LibFormularios
         {
             base.Grabar();
         }
+
+        public void grabarErrores()
+        {
+            /*
+            using System.Configuration;
+            variable global sqlconenecction cn;
+            insertar el try catch dentro de la creacion
+        
+            try
+            {
+                cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconex"].ConnectionString);
+            } catch
+            {
+
+            }
+            try
+            {
+
+                for{
+                    SqlCommand cmd = new SqlCommand("sp_insertarEscuelas", cn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@nom", dgv.rosbdak);
+                    cmd.Parameters.AddWithValue("@edad", escuela.nombre);
+                    cmd.Parameters.AddWithValue("@sexo", escuela.grupo);
+                    if (cn.State == ConnectionState.Open) cn.Close();
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+                    cn.Close();
+                  }    
+            }
+            catch (Exception n)
+            {
+                MessageBox.Show(n.ToString()/*"ERROR AL GUARDAR LOS DATOS");*/
+        }
     }
 }

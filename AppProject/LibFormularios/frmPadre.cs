@@ -143,11 +143,6 @@ namespace LibFormularios
                 MessageBox.Show(n.ToString()/*"ERROR AL GUARDAR LOS DATOS"*/);
             }
         }
-        //-----------------------------------
-        public virtual void GuardarErrores()
-        {
-
-        }
         //----------------------------
 
         public void ImportarExcel()

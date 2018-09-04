@@ -7,14 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace LibFormularios
 {
     public partial class frmIdentidad : LibFormularios.frmPadre
     {
+        SqlConnection cn;
         public frmIdentidad()
         {
             InitializeComponent();
+            try
+            {
+                cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconex"].ConnectionString);
+            }
+            catch
+            {
+
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -80,41 +92,55 @@ namespace LibFormularios
 
         public override void Grabar()
         {
+            guardarErrores();
             base.Grabar();
         }
 
-        public void grabarErrores()
+        private void guardarErrores()
         {
-            /*
-            using System.Configuration;
-            variable global sqlconenecction cn;
-            insertar el try catch dentro de la creacion
-        
-            try
+            if (dgvErrores.RowCount!=0)
             {
-                cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconex"].ConnectionString);
-            } catch
-            {
+                try
+                {
+                    for (int i = 0; i < dgvErrores.RowCount; i++)
+                    {
+                        cn.Open();
+                        //formar la cadena de insercion
+                        string CadenaInsertar = "insert into TErrores values ('"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + dgvErrores[0, i].Value.ToString() + "','"
+                            + dgvErrores[1, i].Value.ToString() + "','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ',' "
+                            + "')";
+                        //Insertar el registro
+                        SqlCommand oComando = new SqlCommand(CadenaInsertar, cn);
+                        oComando.ExecuteNonQuery();
+                        cn.Close();
+                    }
 
-            }
-            try
-            {
+                }
+                catch (Exception n)
+                {
 
-                for{
-                    SqlCommand cmd = new SqlCommand("sp_insertarEscuelas", cn);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@nom", dgv.rosbdak);
-                    cmd.Parameters.AddWithValue("@edad", escuela.nombre);
-                    cmd.Parameters.AddWithValue("@sexo", escuela.grupo);
-                    if (cn.State == ConnectionState.Open) cn.Close();
-                    cn.Open();
-                    cmd.ExecuteNonQuery();
-                    cn.Close();
-                  }    
+                    MessageBox.Show(n.ToString());
+                }
             }
-            catch (Exception n)
-            {
-                MessageBox.Show(n.ToString()/*"ERROR AL GUARDAR LOS DATOS");*/
+            
         }
     }
 }

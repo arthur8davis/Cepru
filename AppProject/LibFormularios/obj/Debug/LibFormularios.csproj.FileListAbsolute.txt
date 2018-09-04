@@ -54,3 +54,4 @@ C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debu
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmIdentidad.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPostulantes.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmRespuestasAlumnos.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmCalificar.resources

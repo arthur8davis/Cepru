@@ -7,17 +7,28 @@ using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using LibClases;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace LibFormularios
 {
     public partial class frmEscuela : LibFormularios.frmPadre
     {
-        
 
+        SqlConnection cn;
         public frmEscuela()
         {
+            
             InitializeComponent();
-           // IniciarEntidad(new cEscuela());
+            try
+            {
+                cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconex"].ConnectionString);
+            }
+            catch
+            {
+
+
+            }
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -88,8 +99,55 @@ namespace LibFormularios
 
         public override void Grabar()
         {
+            guardarErrores();
             base.Grabar();
         }
 
+        private void guardarErrores()
+        {
+            if (dgvErrores.RowCount!=0)
+            {
+                try
+                {
+                    for (int i = 0; i < dgvErrores.RowCount; i++)
+                    {
+                        cn.Open();
+                        //formar la cadena de insercion
+                        string CadenaInsertar = "insert into TErrores values ('"
+                            + dgvErrores[0, i].Value.ToString() + "','"
+                            + dgvErrores[1, i].Value.ToString() + "','"
+                            + dgvErrores[2, i].Value.ToString() + "','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ',' "
+                            + "')";
+                        //Insertar el registro
+                        SqlCommand oComando = new SqlCommand(CadenaInsertar, cn);
+                        oComando.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
+                }
+                catch (Exception n)
+                {
+
+                    MessageBox.Show(n.ToString());
+                }
+            }
+            
+        }
     }
 }

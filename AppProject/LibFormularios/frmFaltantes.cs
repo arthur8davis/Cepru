@@ -7,14 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace LibFormularios
 {
     public partial class frmFaltantes : LibFormularios.frmPadre
     {
+        SqlConnection cn;
         public frmFaltantes()
         {
             InitializeComponent();
+            try
+            {
+                cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconex"].ConnectionString);
+            }
+            catch
+            {
+
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -74,5 +86,53 @@ namespace LibFormularios
         {
             base.Grabar();
         }
+        private void guardarErrores()
+        {
+            if (dgvErrores.RowCount != 0)
+            {
+                try
+                {
+                    for (int i = 0; i < dgvErrores.RowCount; i++)
+                    {
+                        cn.Open();
+                        //formar la cadena de insercion
+                        string CadenaInsertar = "insert into TErrores values ('"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + " ','"
+                            + dgvErrores[0, i].Value.ToString() + "','"
+                            + "')";
+                        //Insertar el registro
+                        SqlCommand oComando = new SqlCommand(CadenaInsertar, cn);
+                        oComando.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
+                }
+                catch (Exception n)
+                {
+
+                    MessageBox.Show(n.ToString());
+                }
+            }
+
+        }
+
+
     }
 }

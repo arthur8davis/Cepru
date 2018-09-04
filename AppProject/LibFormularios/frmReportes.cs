@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibFormularios
 {
-    public partial class frmCalificar : Form
+    public partial class frmReportes : Form
     {
-        public frmCalificar()
+        public frmReportes()
         {
             InitializeComponent();
         }

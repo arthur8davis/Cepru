@@ -90,7 +90,7 @@ namespace LibFormularios
                 }
                 dgvCorecciones.DataSource = dt2;
             }
-            if (cboSelccionCorreccion.SelectedItem.ToString() == "Identidad")
+            if (cboSelccionCorreccion.SelectedItem.ToString() == "Indetidades")
             {
                 DataTable dt2 = new DataTable();
                 dt2.Columns.Add("CodError", typeof(string));
@@ -99,7 +99,7 @@ namespace LibFormularios
 
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    if (dt.Rows[i][11].ToString() != " ")
+                    if (dt.Rows[i][12].ToString() != " ")
                     {
                         dt2.Rows.Add(dt.Rows[i][0].ToString(), dt.Rows[i][12].ToString(), dt.Rows[i][13].ToString());
 
@@ -107,7 +107,7 @@ namespace LibFormularios
                 }
                 dgvCorecciones.DataSource = dt2;
             }
-            if (cboSelccionCorreccion.SelectedItem.ToString() == "Respuestas Alumnos")
+            if (cboSelccionCorreccion.SelectedItem.ToString() == "Respuestas de alumnos")
             {
                 DataTable dt2 = new DataTable();
                 dt2.Columns.Add("CodError", typeof(string));
@@ -117,7 +117,7 @@ namespace LibFormularios
 
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    if (dt.Rows[i][11].ToString() != " ")
+                    if (dt.Rows[i][14].ToString() != " ")
                     {
                         dt2.Rows.Add(dt.Rows[i][0].ToString(), dt.Rows[i][14].ToString(), dt.Rows[i][15].ToString(), dt.Rows[i][16].ToString());
 

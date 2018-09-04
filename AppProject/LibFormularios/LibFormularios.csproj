@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCalificar.cs">
+    <Compile Include="frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCalificar.Designer.cs">
-      <DependentUpon>frmCalificar.cs</DependentUpon>
+    <Compile Include="frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmClaves.cs">
       <SubType>Form</SubType>
@@ -112,8 +112,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmCalificar.resx">
-      <DependentUpon>frmCalificar.cs</DependentUpon>
+    <EmbeddedResource Include="frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClaves.resx">
       <DependentUpon>frmClaves.cs</DependentUpon>

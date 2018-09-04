@@ -38,6 +38,7 @@ C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debu
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPostulantes.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmRespuestasAlumnos.resources
 <<<<<<< HEAD
+<<<<<<< HEAD
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csprojResolveAssemblyReference.cache
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmReportes.resources
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmClaves.resources
@@ -52,6 +53,9 @@ D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormula
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\RdlCompile.cache
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\RdlCompile.compiled
+=======
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmCalificar.resources
+>>>>>>> parent of dee04fb... Reportes
 =======
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmCalificar.resources
 >>>>>>> parent of dee04fb... Reportes

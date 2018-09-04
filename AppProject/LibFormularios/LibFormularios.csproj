@@ -44,11 +44,14 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="dbCepruDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbCepruDataSet.xsd</DependentUpon>
     </Compile>
+=======
+>>>>>>> parent of dee04fb... Reportes
 =======
 >>>>>>> parent of dee04fb... Reportes
     <Compile Include="frmReportes.cs">
@@ -151,6 +154,7 @@
       <DependentUpon>frmRespuestasAlumnos.cs</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <EmbeddedResource Include="Report1.rdlc" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +174,8 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+=======
+>>>>>>> parent of dee04fb... Reportes
 =======
 >>>>>>> parent of dee04fb... Reportes
   </ItemGroup>

@@ -16,5 +16,15 @@ namespace LibFormularios
         {
             InitializeComponent();
         }
+
+        private void frmReportes_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'Calificacion.TCalificada' Puede moverla o quitarla según sea necesario.
+            this.TCalificadaTableAdapter.Fill(this.Calificacion.TCalificada);
+            // TODO: esta línea de código carga datos en la tabla 'dbCepruDataSet.TErrores' Puede moverla o quitarla según sea necesario.
+            this.TErroresTableAdapter.Fill(this.dbCepruDataSet.TErrores);
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

@@ -50,3 +50,16 @@ C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\Ap
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.frmPrincipal.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.Properties.Resources.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.csproj.GenerateResource.Cache
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll

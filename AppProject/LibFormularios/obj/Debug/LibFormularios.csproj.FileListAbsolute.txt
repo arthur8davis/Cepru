@@ -54,4 +54,20 @@ C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debu
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmIdentidad.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPostulantes.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmRespuestasAlumnos.resources
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmCalificar.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.dll.config
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmReportes.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\RdlCompile.cache
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\RdlCompile.compiled

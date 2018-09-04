@@ -83,8 +83,9 @@
             this.BtnCalificar.Name = "BtnCalificar";
             this.BtnCalificar.Size = new System.Drawing.Size(127, 39);
             this.BtnCalificar.TabIndex = 9;
-            this.BtnCalificar.Text = "Calificar";
+            this.BtnCalificar.Text = "Reportes";
             this.BtnCalificar.UseVisualStyleBackColor = true;
+            this.BtnCalificar.Click += new System.EventHandler(this.BtnCalificar_Click);
             // 
             // BtnRespuestasAlumn
             // 

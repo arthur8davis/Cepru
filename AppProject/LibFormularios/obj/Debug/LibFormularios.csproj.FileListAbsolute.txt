@@ -20,17 +20,6 @@ F:\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPadre.resources
 F:\AppProject\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache
 F:\AppProject\LibFormularios\obj\Debug\LibFormularios.dll
 F:\AppProject\LibFormularios\obj\Debug\LibFormularios.pdb
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csprojResolveAssemblyReference.cache
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmEscuela.resources
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmMostrarDatos.resources
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPadre.resources
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.pdb
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.pdb
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibClases.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibClases.pdb
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.dll
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.pdb
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\bin\Debug\LibClases.dll
@@ -42,32 +31,23 @@ C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debu
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.dll
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.pdb
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmIdentidad.resources
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmClaves.resources
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmCorrecciones.resources
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmFaltantes.resources
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPostulantes.resources
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmRespuestasAlumnos.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmClaves.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmCorrecciones.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmFaltantes.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmIdentidad.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPostulantes.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmRespuestasAlumnos.resources
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\LibFormularios.dll.config
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\Microsoft.ReportViewer.WinForms.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\Microsoft.SqlServer.Types.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
-D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csprojResolveAssemblyReference.cache
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmReportes.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmClaves.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmCorrecciones.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmEscuela.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmFaltantes.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmIdentidad.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmMostrarDatos.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPadre.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmPostulantes.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.frmRespuestasAlumnos.resources
+D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.Cache
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\RdlCompile.cache
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\LibFormularios\obj\Debug\RdlCompile.compiled

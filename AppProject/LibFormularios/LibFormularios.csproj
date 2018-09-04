@@ -46,11 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calificacion.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Calificacion.xsd</DependentUpon>
-    </Compile>
     <Compile Include="dbCepruDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -161,21 +156,9 @@
       <DependentUpon>frmRespuestasAlumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="Report2.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Calificacion.xsc">
-      <DependentUpon>Calificacion.xsd</DependentUpon>
-    </None>
-    <None Include="Calificacion.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Calificacion.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Calificacion.xss">
-      <DependentUpon>Calificacion.xsd</DependentUpon>
-    </None>
     <None Include="dbCepruDataSet.xsc">
       <DependentUpon>dbCepruDataSet.xsd</DependentUpon>
     </None>

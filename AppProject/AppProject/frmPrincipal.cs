@@ -132,7 +132,6 @@ namespace AppProject
             CkbClaves.Checked = true;
             MessageBox.Show("CARGADO DE DATOS EXITOSO - PROCEDA A REALZIAR CORRECCIONES");
             //BtnCorreciones.Enabled = true;
-            BtnCalificar.Enabled = true;
             BtnClaveRespuestas.Enabled = false;
         }
 
@@ -141,13 +140,6 @@ namespace AppProject
             frmCorrecciones Correcciones = new frmCorrecciones();
             Correcciones.ShowDialog();
             BtnCalificar.Enabled = true;
-        }
-
-        private void BtnCalificar_Click(object sender, EventArgs e)
-        {
-            frmReportes Reportes = new frmReportes();
-            Reportes.ShowDialog();
-
         }
     }
 }

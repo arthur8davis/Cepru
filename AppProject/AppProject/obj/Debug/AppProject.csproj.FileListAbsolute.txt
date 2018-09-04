@@ -37,8 +37,11 @@ C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\Ap
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.frmPrincipal.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.Properties.Resources.resources
 C:\Users\Admin\Documents\proyecto cepru\Cepru\AppProject\AppProject\obj\Debug\AppProject.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.csprojResolveAssemblyReference.cache
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.frmPrincipal.resources
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.Properties.Resources.resources
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\obj\Debug\AppProject.csproj.GenerateResource.Cache
 D:\U\lavo V\Labo V 2.0\Guit\Cepru\AppProject\AppProject\bin\Debug\AppProject.exe.config
+=======
+>>>>>>> parent of dee04fb... Reportes
